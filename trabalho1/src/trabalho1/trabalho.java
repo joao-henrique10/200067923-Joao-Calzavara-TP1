@@ -7,7 +7,7 @@ public class trabalho {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int qtdClientes=0 ;                            //Defini algumas das vari·veis do cÛdigo0
+		int qtdClientes=0 ;                            //Defini algumas das vari√°veis do c√≥digo0
 		int clientes=0 ;
 		int seletorDoMenu ;
 		int qtdProdutos=0 ;
@@ -15,7 +15,7 @@ public class trabalho {
 		int alterarDados;
 		int alterarDadosProduto;
 		
-		int qtdEstoque[] = new int [200];                         //Defini os vetores que ser„o usados nas cases do switch
+		int qtdEstoque[] = new int [200];                         //Defini os vetores que ser√£o usados nas cases do switch
 		int valorCompra[] = new int [200];
         String porcentagemLucro[] = new String [200];
 		String descricao[] = new String [200];
@@ -25,19 +25,19 @@ public class trabalho {
 		String nomePessoa[] = new String [200];
 		
 		
-		Scanner ler = new Scanner(System.in);                         //Defini o menu para a escolha de uma das 7 opÁıes
-        System.out.print("Escolha uma opÁ„o de 1 a 7:\n"
-        		+ "Opc„o 1 : Cadasto de cliente:\n"
-        		+ "OpÁ„o 2 : Busca por cliente:\n"
-        		+ "OpÁ„o 3 : Cadastro de produtos:\n"
-        		+ "OpÁ„o 4 : Busca por produto:\n"
-        		+ "OpÁ„o 5 : Cadastro de venda:\n"
-        		+ "OpÁ„o 6 : Mostrar produtos em estoque:\n"
-        		+ "OpÁ„o 7 : Fechar o programa:\n");         
+		Scanner ler = new Scanner(System.in);                         //Defini o menu para a escolha de uma das 7 op√ß√µes
+        System.out.print("Escolha uma op√ß√£o de 1 a 7:\n"
+        		+ "Opc√£o 1 : Cadasto de cliente:\n"
+        		+ "Op√ß√£o 2 : Busca por cliente:\n"
+        		+ "Op√ß√£o 3 : Cadastro de produtos:\n"
+        		+ "Op√ß√£o 4 : Busca por produto:\n"
+        		+ "Op√ß√£o 5 : Cadastro de venda:\n"
+        		+ "Op√ß√£o 6 : Mostrar produtos em estoque:\n"
+        		+ "Op√ß√£o 7 : Fechar o programa:\n");         
         
         seletorDoMenu = ler.nextInt();
         
-        while (seletorDoMenu != 7) {        	        	          //Fiz ser diferente de 7, pois sendo 7 o programa ir· desligar
+        while (seletorDoMenu != 7) {        	        	          //Fiz ser diferente de 7, pois sendo 7 o programa ir√° desligar
         switch (seletorDoMenu) {                                           
         
         case 1:                                                       //Fiz o primeiro caso do switch para o cadastro do cliente
@@ -49,11 +49,11 @@ public class trabalho {
           	  
           
           
-          System.out.println("Digite o nome dos clientes:");         //Fiz as perguntas e guardei as respostas nas vari·veis
+          System.out.println("Digite o nome dos clientes:");         //Fiz as perguntas e guardei as respostas nas vari√°veis
           nomePessoa[clientes] = ler.next();
           
           
-          System.out.println("Digite o endereÁo dos clientes:");    //Guardei os valores em vetores para conseguir armazen·-los
+          System.out.println("Digite o endere√ßo dos clientes:");    //Guardei os valores em vetores para conseguir armazen√°-los
           endereco[clientes] = ler.next();
           
           
@@ -67,10 +67,10 @@ public class trabalho {
         case 2:
             String clienteProcurado;
             
-        	System.out.println("Digite o nome a ser buscado, se o cliente n„o for encontrado vocÍ voltar· ao menu inicial :");                  //Pedi o nome a ser buscado e o guardei numa vari·vel
+        	System.out.println("Digite o nome a ser buscado, se o cliente n√£o for encontrado voc√™ voltar√° ao menu inicial :");                  //Pedi o nome a ser buscado e o guardei numa vari√°vel
             clienteProcurado = ler.next();
             
-            for(int procurador = 0 ; procurador < clientes; procurador++) {      //Fiz um for e um if para que juntos vejam se o nome buscado est· guardado no vetor do caso 1
+            for(int procurador = 0 ; procurador < clientes; procurador++) {      //Fiz um for e um if para que juntos vejam se o nome buscado est√° guardado no vetor do caso 1
          	                                                                     
             	if(nomePessoa[procurador].equals(clienteProcurado)) {
          		
@@ -78,18 +78,18 @@ public class trabalho {
                
             		System.out.println("Telefone: " + telefone[procurador]);
                 
-            		System.out.println("EndereÁo: " + endereco[procurador]);
+            		System.out.println("Endere√ßo: " + endereco[procurador]);
                
-            		System.out.println("Deseja mudar o cadastro desse cliente? Se sim digite 1, se n„o digite 2 e volte ao menu:");       
+            		System.out.println("Deseja mudar o cadastro desse cliente? Se sim digite 1, se n√£o digite 2 e volte ao menu:");       
                 
             		alterarDados = ler.nextInt();
                 
-            		if(alterarDados==1) {                                        //Fiz com que digitando 1, aparecesse novamente o caso 1 para a troca das informaÁıes
+            		if(alterarDados==1) {                                        //Fiz com que digitando 1, aparecesse novamente o caso 1 para a troca das informa√ß√µes
                 	System.out.println("Digite o nome dos clientes:"); 
                     nomePessoa[procurador] = ler.next();                         //E digitando 2, volta ao menu
                     
                     
-                    System.out.println("Digite o endereÁo dos clientes:");       //Uso o[procurador] para mudar o nome citado pela pessoa apenas
+                    System.out.println("Digite o endere√ßo dos clientes:");       //Uso o[procurador] para mudar o nome citado pela pessoa apenas
                     endereco[procurador] = ler.next();
                     
                     
@@ -107,18 +107,18 @@ public class trabalho {
         	
         	break;
         
-        case 3:                                                                   //O caso 3, basicamente foi uma cÛpia do caso 1, porÈm mudando as informaÁıes necess·rias
+        case 3:                                                                   //O caso 3, basicamente foi uma c√≥pia do caso 1, por√©m mudando as informa√ß√µes necess√°rias
         	if(qtdProdutos == 0) {                                                         
             System.out.println("Digite a quantidade de produtos a serem cadastrados: ");    
-            qtdProdutos = ler.nextInt();   }                                  //Usei um if para iniciar as perguntas, pois um vetor comeÁa sempre com o valor 0 e armazenei o valor
+            qtdProdutos = ler.nextInt();   }                                  //Usei um if para iniciar as perguntas, pois um vetor come√ßa sempre com o valor 0 e armazenei o valor
             
             if(produtos < qtdProdutos) {                                        
             	              
-            System.out.println("Digite o nome do produto:");                  //Pedi os valores e os guardei em vetores para conseguir armazen·-los
+            System.out.println("Digite o nome do produto:");                  //Pedi os valores e os guardei em vetores para conseguir armazen√°-los
             nomeProduto[produtos] = ler.next();
             
             
-            System.out.println("Digite a descriÁ„o do produto:"); 
+            System.out.println("Digite a descri√ß√£o do produto:"); 
             descricao[produtos] = ler.next();
             
             
@@ -138,31 +138,31 @@ public class trabalho {
         
         case 4:
             String produtoProcurado;
-        	System.out.println("Digite o nome do produto a ser buscado, se ele n„o for encontrado vocÍ voltar· ao menu inicial:");    
-            produtoProcurado = ler.next();                        //Pedi o produto que ser· buscado e o guardei em uma vari·vel
+        	System.out.println("Digite o nome do produto a ser buscado, se ele n√£o for encontrado voc√™ voltar√° ao menu inicial:");    
+            produtoProcurado = ler.next();                        //Pedi o produto que ser√° buscado e o guardei em uma vari√°vel
             
-            for(int procurador = 0 ; procurador < produtos; procurador++) {   //Usei a mesma ideia do for do caso 2, para que junto com o if, ele procurasse se oque a pessoa pediu se assemelha ao que est· armazenado
-         	if(nomeProduto[procurador].equals(produtoProcurado)) {
+            for(int procurador2 = 0 ; procurador2 < produtos; procurador2++) {   //Usei a mesma ideia do for do caso 2, para que junto com o if, ele procurasse se oque a pessoa pediu se assemelha ao que est√° armazenado
+         	if(nomeProduto[procurador2].equals(produtoProcurado)) {
          		
-         		System.out.println("Nome: "+nomeProduto[procurador]);         //Coloquei as informaÁıes quando o nome do produto È encontrado
+         		System.out.println("Nome: "+nomeProduto[procurador2]);         //Coloquei as informa√ß√µes quando o nome do produto √© encontrado
          		
-                System.out.println("Valor de compra: " + valorCompra[procurador]);
+                System.out.println("Valor de compra: " + valorCompra[procurador2]);
                 
-                System.out.println("DescriÁ„o: " + descricao[procurador]);    //Uso o[procurador] para mudar o nome citado pela pessoa apenas
+                System.out.println("Descri√ß√£o: " + descricao[procurador2]);    //Uso o[procurador] para mudar o nome citado pela pessoa apenas
                 
-                System.out.println("Porcentagem de lucro: " + porcentagemLucro[procurador]);
+                System.out.println("Porcentagem de lucro: " + porcentagemLucro[procurador2]);
                 
-                System.out.println("Quantidade em estoque: " + qtdEstoque[procurador]);
+                System.out.println("Quantidade em estoque: " + qtdEstoque[procurador2]);
                 
-                System.out.println("Deseja mudar o cadastro desse produto? Se sim digite 1, se n„o digite 2:");  //Fiz com que se a pessoa digitasse 1, pedisse a alteraÁ„o
-                alterarDadosProduto = ler.nextInt();                                                             //E se fosse 2, voltava pro menu, e os guardei numa vari·vel
+                System.out.println("Deseja mudar o cadastro desse produto? Se sim digite 1, se n√£o digite 2:");  //Fiz com que se a pessoa digitasse 1, pedisse a altera√ß√£o
+                alterarDadosProduto = ler.nextInt();                                                             //E se fosse 2, voltava pro menu, e os guardei numa vari√°vel
                
                 if(alterarDadosProduto==1) {                                  //Nesse if se a pessoa coloca 1, ela pode alterar oque estava escrito
                 	System.out.println("Digite o nome do produto:"); 
                     nomeProduto[produtos] = ler.next();
                     
                     
-                    System.out.println("Digite a descriÁ„o do produto:");            //Pedi a descriÁ„o novamente do produto e os guardei em uma vari·vel de cada um
+                    System.out.println("Digite a descri√ß√£o do produto:");            //Pedi a descri√ß√£o novamente do produto e os guardei em uma vari√°vel de cada um
                     descricao[produtos] = ler.next();
                     
                     
@@ -187,28 +187,43 @@ public class trabalho {
         	break;
         
         case 5:
-        	for(int procurador = 0 ; procurador < clientes; procurador++) {
-        		System.out.println(nomePessoa[procurador]);
-                	}
-        	String pessoaEscolhida;
-        	System.out.println("Selecione um desses:");
-        	pessoaEscolhida = ler.next();
+        	int pessoaEscolhida = 0;
+        	int produtoEscolhido = 0 ;
+        	int qtdVendida = 0;
+         	
+        	System.out.println("Escolha um desses clientes com o numero:");                       
         	
-        	for(int procurador = 0 ; procurador < produtos; procurador++) {
-        		System.out.println(nomeProduto[procurador]);
-                	}
-        	String produtoEscolhido;
-        	System.out.println("Selecione um desses:");
-        	produtoEscolhido = ler.next();
+           
         	
-        	int qtdVendida;
-        	System.out.println("Quantos produtos foram vendidos para esse cliente?");
-        	qtdVendida = ler.nextInt();
-        	//qtdEstoque-qtdVendida;
+            for(int procurador3 = 0 ; procurador3 < clientes; procurador3++) {         //for para achar o cliente
+   
+        		System.out.println(procurador3 + ":" + nomePessoa[procurador3]);
+            		
+            }
+            pessoaEscolhida = ler.nextInt();
+ 
+        	System.out.println("Escolha um dos produtos a seguir:");
+
+        	for(int procurador4 = 0 ; procurador4 < produtos; procurador4++) {         //for para achar o produto
+        		
+        		System.out.println(procurador4 + ":" + nomeProduto[procurador4]);
+            	
+	
+        	}
+        	produtoEscolhido = ler.nextInt();
         	
+        	                                    //Fiz o if pra saber a quantidade que ser√° a vendida
+        		if (produtoEscolhido >= 0) {
+        			System.out.println("Quantos produtos " + nomeProduto[produtoEscolhido] +  "o senhor(a) " + nomePessoa[pessoaEscolhida] + " comprou? ");
+        			qtdVendida= ler.nextInt();
+        			
+        			
+        			
+        		}
+        		
         	
-        	
-        	
+        	qtdEstoque[produtoEscolhido]=qtdEstoque[produtoEscolhido] - qtdVendida;
+     
         	break;
         
         case 6:
@@ -221,7 +236,7 @@ public class trabalho {
         		
         	}
         	break;
-        case 7:                                                                       //No caso 7, n„o coloquei nada, pois se a pessoa escolhe esse caso, o pograma se encerra
+        case 7:                                                                       //No caso 7, n√£o coloquei nada, pois se a pessoa escolhe esse caso, o pograma se encerra
         	
         	break;
         
@@ -230,14 +245,14 @@ public class trabalho {
         }
 				                    
 		     
-        System.out.print("Escolha uma opÁ„o de 1 a 7:\n"
-        		+ "Opc„o 1 : Cadasto de cliente:\n"         //Coloquei isso fora do switch, para que sempre volte ao menu apÛs a escolha da opÁ„o, a menos que seja a 7 que termina o programa
-        		+ "OpÁ„o 2 : Busca por cliente:\n"                  
-        		+ "OpÁ„o 3 : Cadastro de produtos:\n"
-        		+ "OpÁ„o 4 : Busca por produto:\n"
-        		+ "OpÁ„o 5 : Cadastro de venda:\n"
-        		+ "OpÁ„o 6 : Mostrar produtos em estoque:\n"
-        		+ "OpÁ„o 7 : Fechar o programa:\n");   ;   
+        System.out.print("Escolha uma op√ß√£o de 1 a 7:\n"
+        		+ "Opc√£o 1 : Cadasto de cliente:\n"         //Coloquei isso fora do switch, para que sempre volte ao menu ap√≥s a escolha da op√ß√£o, a menos que seja a 7 que termina o programa
+        		+ "Op√ß√£o 2 : Busca por cliente:\n"                  
+        		+ "Op√ß√£o 3 : Cadastro de produtos:\n"
+        		+ "Op√ß√£o 4 : Busca por produto:\n"
+        		+ "Op√ß√£o 5 : Cadastro de venda:\n"
+        		+ "Op√ß√£o 6 : Mostrar produtos em estoque:\n"
+        		+ "Op√ß√£o 7 : Fechar o programa:\n");   ;   
         seletorDoMenu = ler.nextInt();  
       }
 
